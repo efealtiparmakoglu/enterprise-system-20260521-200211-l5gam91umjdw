@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260521-200211-l5gam91umjdw-service
+spec:
+  selector:
+    app: enterprise-system-20260521-200211-l5gam91umjdw
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
